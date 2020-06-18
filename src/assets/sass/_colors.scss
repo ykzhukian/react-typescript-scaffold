@@ -1,0 +1,28 @@
+$color-blue         : #4075c5;
+$color-light-blue   : #A291F4;
+$color-dark-blue    : #141C50;
+$color-lighter-blue : #bec7ff80;
+$color-white        : #ffffff;
+$color-grey         : #999999;
+$color-grey-subtitle: #666666;
+$color-light-grey   : #E3E3E3;
+$color-lighter-grey : #F0F0F0;
+$color-orange       : #FE705E;
+$color-dark-orange  : #F45A57;
+$color-dark-font    : #333333;
+$color-yellow       : #FFEBB7;
+$color-yellow-font  : #B28510;
+$color-brown        : #924423;
+$color-brown-font   : #FFD06A;
+
+@mixin button-gradation {
+  background-image:  -moz-linear-gradient(177deg, #FF985B 0%, #FB3B63 100%) !important;
+  background-image: -webkit-linear-gradient(177deg, #FF985B 0%, #FB3B63 100%) !important;
+  background-image: linear-gradient(177deg, #FF985B 0%, #FB3B63 100%) !important;
+}
+
+@mixin boxshadow {
+  -webkit-box-shadow: 0 0 14px 0 rgba(39, 71, 162, 0.102);
+  -moz-box-shadow: 0 0 14px 0 rgba(39, 71, 162, 0.102);
+  box-shadow: 0 0 14px 0 rgba(39, 71, 162, 0.102);
+}
