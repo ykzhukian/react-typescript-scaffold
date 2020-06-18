@@ -17,12 +17,20 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.jsx?$|\.tsx?$/,
+        loader: 'eslint-loader',
+        exclude: [
+          /node_modules/
+        ]
+      },
+      {
         test: /\.jsx?$|\.tsx?$/,
         exclude: [
           /node_modules/,
           resolve('./dist'),
         ],
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.css$|\.scss$/,
