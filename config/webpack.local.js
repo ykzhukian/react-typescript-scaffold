@@ -22,11 +22,5 @@ module.exports = merge(common, {
   plugins: [
     new webpack.DefinePlugin(envKeys),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.LoaderOptionsPlugin({
-      test: /\.jsx?$|\.tsx?$/,
-      loader: 'eslint-loader',
-      exclude: /node_modules/,
-      configFile: '../.eslintrc.js'
-    })
   ]
 });
