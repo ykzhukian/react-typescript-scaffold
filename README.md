@@ -4,16 +4,16 @@ test
 
 安装依赖
 ```
-npm i
+yarn
 ```
 
 开发
 ```
-npm start
+yarn start
 ```
 
 build
 ```
-npm build-dev
-npm build-prod
+yarn build-dev
+yarn build-prod
 ```
