@@ -1,5 +1,7 @@
 # react typescript
 
+test
+
 安装依赖
 ```
 npm i
