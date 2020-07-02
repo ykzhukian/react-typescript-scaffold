@@ -21,9 +21,8 @@ module.exports = {
     "plugin:react-hooks/recommended",
   ],
   "rules": {
-    // 禁止使用 var
     "no-var": "error",
-    // 优先使用 interface 而不是 type
+    // 优先使用 interface
     "@typescript-eslint/consistent-type-definitions": [
       "error",
       "interface"
@@ -34,6 +33,11 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-static-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 };
