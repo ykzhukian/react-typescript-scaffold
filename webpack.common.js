@@ -52,7 +52,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.jpe?g$|\.png$|\.svg$/,
+        test: /\.jpe?g$|\.png$/,
         use: [
           {
             loader: 'url-loader',
@@ -62,6 +62,10 @@ module.exports = {
             }
           },
         ]
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
