@@ -47,8 +47,6 @@ module.exports = {
         ],
         include: [
           resolve('./src'),
-          resolve('./node_modules/normalize.css'),
-          resolve('./node_modules/react-toastify/dist/ReactToastify.css'),
         ],
       },
       {
